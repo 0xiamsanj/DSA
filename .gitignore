@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #vscode properties
 
 .vscode/ 
@@ -7,18 +7,4 @@
 Recursion/output/
 *.exe
 SkillRack/Daily Challenge/output/
-OOP/
-Linked List/
-=======
-#vscode properties
-
-.vscode/ 
-
-
-Recursion/output/
-*.exe
-SkillRack/Daily Challenge/output/
-OOP/
-Linked List/
->>>>>>> 5ba302d31516416083e500390e43ecadc26b0b17
-Stack/
+*output/
