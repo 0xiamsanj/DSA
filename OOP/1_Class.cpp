@@ -27,6 +27,7 @@ class Hero{
         this->name = temp.name;
     }
 
+
     //Prints all the values present inside that particular object 
     void print(){
         cout<<"Health: "<<this->health<<endl;
