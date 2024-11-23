@@ -1,0 +1,27 @@
+#!/bin/bash
+
+output_dir="."
+file_extension="$1"
+file_name="$2"
+
+# Replacing file names with underscre
+file_name=${file_name// /_}
+
+#Largest number from the existing files
+max_number=$(ls| \
+    sed -E 's/([0-9]+)_.*\.(cpp|go)/\1/' | sort -n | tail -n 1
+    )
+
+#If no files exist, start from 1
+if [ -z "$max_number" ]; then
+    next_number=1
+else
+    next_number=$((max_number + 1))
+fi
+
+file="${next_number}_${file_name}.$1"
+# echo $file
+# echo $file_extension
+# echo $file_name
+touch "$file"
+echo "$file created!!!"
